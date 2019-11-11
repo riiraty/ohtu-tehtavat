@@ -1,21 +1,15 @@
 package ohtu.verkkokauppa;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Pankki implements Bank {
 
-//    private static Pankki instanssi;
-//
-//    public static Pankki getInstance() {
-//        if (instanssi == null) {
-//            instanssi = new Pankki();
-//        }
-//
-//        return instanssi;
-//    }
-    //private Kirjanpito kirjanpito;
     private Accounting kirjanpito;
 
+    @Autowired
     public Pankki(Accounting kirjanpito) {
-        //kirjanpito = Kirjanpito.getInstance();
         this.kirjanpito = kirjanpito;
     }
 
