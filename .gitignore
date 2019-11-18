@@ -1,3 +1,5 @@
+/.gradle/
+
 /viikko1/tehtavat14-16/NhlStatistics1/.nb-gradle/
 /viikko1/tehtavat14-16/NhlStatistics1/.gradle/
 /viikko1/tehtavat14-16/NhlStatistics1/build/
@@ -25,4 +27,5 @@
 /viikko3/tehtavat4-11/WebLogin/.nb-gradle/
 /viikko3/tehtavat4-11/WebLogin/.gradle/
 /viikko3/tehtavat4-11/WebLogin/build/
-
+/viikko3/tehtavat4-11/WebLogin/salasanat.txt/
+/viikko3/tehtavat4-11/WebLogin/geckodriver-v0.26.0-linux64.tar.gz/
