@@ -11,15 +11,26 @@ import statistics.Player;
  *
  * @author riiraty
  */
-public class All implements Matcher {
+public class Or implements Matcher {
     
-    public All() {
-        
+    private Matcher[] matchers;
+
+    public Or(Matcher... matchers) {
+        this.matchers = matchers;
     }
 
     @Override
     public boolean matches(Player p) {
-        return true;
+        for (Matcher matcher : matchers) {
+            if (matcher.matches(p)) {
+                return true;
+            }
+        }
+
+        return false;
+        
     }
+    
+    
     
 }
